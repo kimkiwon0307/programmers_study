@@ -1,16 +1,15 @@
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
 
 class Solution {
     public int[] solution(int n) {
+        List<Integer> answer = new ArrayList<>();
        
-        int count = (n + 1) / 2;
-       
-        int[] result = new int[count];
-     
-        for (int i = 0, num = 1; num <= n; i++, num += 2) {
-            result[i] = num;
+        for(int i=1; i<=n; i++){
+            if(i % 2 == 1){
+                answer.add(i);
+            }
         }
-        
-        return result;
+        return answer.stream().mapToInt(value -> value).toArray();
     }
 }
