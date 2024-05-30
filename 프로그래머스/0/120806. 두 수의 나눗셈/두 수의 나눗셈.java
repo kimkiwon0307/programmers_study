@@ -10,7 +10,7 @@ class Solution {
         System.out.println("a = " + (int)a);
         
         
-        
+    
         return (int)a;
     }
 }
