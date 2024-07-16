@@ -1,17 +1,15 @@
-import java.util.Arrays;
-
 class Solution {
     public double solution(int[] numbers) {
+       
         int sum = 0;
-        double answer = 0;
         
-        for(int number : numbers){
-            sum += number;
-        }  
+        for(int i=0; i<numbers.length; i++){
+            
+             sum = sum + numbers[i];
+            
+        }
         
-            answer = (double)sum / numbers.length ;
-      
-        
-        return  answer;
+        double answer = (double)sum / (double)numbers.length;
+        return answer;
     }
 }
