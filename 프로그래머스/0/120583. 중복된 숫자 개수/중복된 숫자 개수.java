@@ -1,15 +1,17 @@
 class Solution {
-    public int solution(int[] arrays, int n) {
-      	int i = 0;
-			int amount = 0;
-			for(int array : arrays){
-
-				if(array == n){
-					amount += 1;
-				}
-			}
+    public int solution(int[] array, int n) {
+      
+        int count = 0;
         
-        int answer = amount;
+        for(int i=0; i<array.length; i++){
+            
+            if(array[i] == n){
+                count++;
+            }
+            
+        }
+        
+        int answer = count;
         return answer;
     }
 }
