@@ -1,9 +1,16 @@
-import java.util.Arrays;
+import java.util.*;
+
 class Solution {
     public int solution(int[] array) {
+        
+        
         Arrays.sort(array);
-        int a = (array.length + 1) / 2  ;
-        int answer = array[a-1];
+        
+        int a = array.length;
+        
+        int num = a/2;
+        
+        int answer = array[num];
         return answer;
     }
 }
