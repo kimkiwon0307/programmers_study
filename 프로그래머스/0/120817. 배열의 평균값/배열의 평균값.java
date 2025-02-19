@@ -3,13 +3,11 @@ class Solution {
        
         int sum = 0;
         
-        for(int i=0; i<numbers.length; i++){
-            
-             sum = sum + numbers[i];
-            
+        for(int number : numbers){    
+            sum += number;
         }
         
-        double answer = (double)sum / (double)numbers.length;
+        double answer = (double)sum / numbers.length;
         return answer;
     }
 }
